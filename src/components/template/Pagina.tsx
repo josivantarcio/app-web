@@ -1,19 +1,22 @@
-import React from "react";
-import Cabecalho from "./Cabecalho";
+import Cabecalho from './Cabecalho'
 
-export interface PaginaProps{
-    children: React.ReactNode;
-    className?: string;
+export interface PaginaProps {
+    children: React.ReactNode
+    className?: string
 }
 
-export default function Pagina(props: PaginaProps){
-    return <div className="flex flex-col min-h-screen">
-                <Cabecalho />
-                <main className={`
-                    flex-1 w-[700px] mx-auto 
-                    ${props.className ?? ''} py-10 
-                    `}
-                    >
-                        {props.children}</main>
-            </div>
+export default function Pagina(props: PaginaProps) {
+    return (
+        <div className="flex flex-col min-h-screen">
+            <Cabecalho />
+            <main
+                className={`
+                    flex-1 w-[700] mx-auto
+                    ${props.className ?? ''} py-10
+                `}
+            >
+                {props.children}
+            </main>
+        </div>
+    )
 }

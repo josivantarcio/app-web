@@ -1,4 +1,4 @@
-import Produto from "../model/Produto";
+import Produto from "@/data/model/Produto";
 
 const produtos: Produto[] = [
     {
@@ -283,3 +283,4 @@ const produtos: Produto[] = [
     }
   ]
   
+  export default produtos;
